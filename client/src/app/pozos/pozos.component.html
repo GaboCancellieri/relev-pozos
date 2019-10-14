@@ -1,0 +1,320 @@
+<div [@routerTransition]>
+    <div class="br-mainpanel">
+        <div class="pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">
+            <h4 class="tx-gray-800 mg-b-5">Pozos</h4>
+        </div>
+
+        <div class="br-pagebody pd-x-20 pd-sm-x-30">
+            <div class="row row-sm">
+                <div class="col-lg-12">
+                    <div class="card card-default mb-3">
+                        <div class="card-header">
+                            <div>
+                                <a>
+                                    <strong style="text-decoration: none;color: #333;">Administración de
+                                        Pozos</strong>
+                                    <div class='pull-left'>
+                                    </div>
+                                </a>
+                                <button pButton class="ui-button-rounded float-right" label="Nuevo Pozo"
+                                    icon="fas fa-plus" data-toggle="modal" data-target="#modalAgregarPozo">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p-table #dt [columns]="cols" [value]="pozos" selectionMode="single"
+                                [(selection)]="selectedPozo" [paginator]="true" [rows]="12">
+                                <ng-template pTemplate="header" let-columns>
+                                    <tr>
+                                        <th *ngFor="let col of columns">
+                                            {{col.header}}
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                                            <input *ngSwitchCase="'nombre'" class="form-control" type="text"
+                                                [(ngModel)]="model.filtroNombre" name="filtroNombre"
+                                                #filtroNombre="ngModel"
+                                                (ngModelChange)="filtrarNombre(filtroNombre.value); reiniciarTabla();"
+                                                style="width:100%">
+                                            <input *ngSwitchCase="'area'" class="form-control" type="text"
+                                                [(ngModel)]="model.filtroArea" name="filtroArea" #filtroArea="ngModel"
+                                                (ngModelChange)="filtrarArea(filtroArea.value); reiniciarTabla();"
+                                                style="width:100%" style="width:100%">
+                                            <input *ngSwitchCase="'coordenadas'" class="form-control" type="text"
+                                                [(ngModel)]="model.filtroCoordenadas" name="filtroCoordenadas"
+                                                #filtroCoordenadas="ngModel"
+                                                (ngModelChange)="filtrarCoordenadas(filtroCoordenadas.value); reiniciarTabla();"
+                                                style="width:100%">
+                                                <input *ngSwitchCase="'etapa'" class="form-control" type="text"
+                                                [(ngModel)]="model.filtroEtapa" name="filtroEtapa"
+                                                #filtroEtapa="ngModel"
+                                                (ngModelChange)="filtrarEtapa(filtroEtapa.value); reiniciarTabla();"
+                                                style="width:100%">
+                                            <input *ngSwitchCase="'estado'" class="form-control" type="text"
+                                                [(ngModel)]="model.filtroEstado" name="filtroEstado"
+                                                #filtroEstado="ngModel"
+                                                (ngModelChange)="filtrarEstado(filtroEstado.value); reiniciarTabla();"
+                                                style="width:100%">
+                                            <input *ngSwitchCase="'fecha'" class="form-control" type="date"
+                                                [(ngModel)]="model.filtroFecha" name="filtroFecha"
+                                                #filtroFecha="ngModel"
+                                                (ngModelChange)="filtrarFecha(filtroFecha.value); reiniciarTabla();"
+                                                style="width:100%" style="width:100%">
+                                            <input *ngSwitchCase="'relevador'" class="form-control" type="text"
+                                                [(ngModel)]="model.filtroRelevador" name="filtroRelevador"
+                                                #filtroRelevador="ngModel"
+                                                (ngModelChange)="filtrarRelevador(filtroRelevador.value); reiniciarTabla();"
+                                                style="width:100%" style="width:100%">
+                                        </th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-pozo let-columns="columns">
+                                    <tr [pSelectableRow]="pozo">
+                                        <td *ngFor="let col of columns">
+                                            <div *ngIf="pozo[col.field] && col.field === 'nombre'">
+                                                {{pozo[col.field]}}
+                                            </div>
+                                            <div *ngIf="pozo[col.field] && col.field === 'region'">
+                                                {{pozo[col.field].nombre}}
+                                            </div>
+                                            <div *ngIf="pozo[col.field] && col.field === 'yacimiento'">
+                                                {{pozo[col.field].nombre}}
+                                            </div>
+                                            <div *ngIf="pozo[col.field] && col.field === 'provincia'">
+                                                {{pozo[col.field].nombre}}
+                                            </div>
+                                            <div *ngIf="pozo[col.field] && col.field === 'coordenadas'">
+                                                {{pozo[col.field].latitud}}, {{pozo[col.field].longitud}}
+                                            </div>
+                                            <div
+                                                *ngIf="pozo.estado.estadoPozo.nombre != 'Pendiente' && col.field === 'fecha'">
+                                                {{pozo.estadoActual.fecha  | date: 'dd/MM/yyyy'}}
+                                            </div>
+                                            <div *ngIf="pozo[col.field] && col.field === 'relevador'">
+                                                {{pozo[col.field].nombre}} {{pozo[col.field].apellido}}
+                                            </div>
+                                            <div *ngIf="pozo[col.field] && col.field === 'etapa'">
+                                                    <div style="text-align: center">
+                                                        <button pButton
+                                                            *ngIf="pozo[col.field].nombre == 'Etapa 1'"
+                                                            readonly='true'
+                                                            class="ui-button-danger ui-button-raised"
+                                                            label="Etapa 1" icon="fas fa-bell"></button>
+                                                        <button pButton
+                                                            *ngIf="pozo[col.field].nombre == 'Etapa 2'"
+                                                            readonly='true'
+                                                            class="ui-button-warning ui-button-raised"
+                                                            label="Etapa 2" icon="fas fa-stopwatch"></button>
+                                                        <button pButton
+                                                            *ngIf="pozo[col.field].nombre == 'Etapa 3'"
+                                                            readonly='true'
+                                                            class="ui-button-success ui-button-raised"
+                                                            label="Etapa 3" icon="fas fa-flag-checkered"></button>
+                                                    </div>
+                                                </div>
+                                            <div *ngIf="pozo[col.field] && col.field === 'estado'">
+                                                <div style="text-align: center">
+                                                    <button pButton
+                                                        *ngIf="pozo[col.field].estadoPozo.nombre == 'Pendiente'"
+                                                        readonly='true'
+                                                        class="ui-button-secondary ui-button-raised ui-button-rounded"
+                                                        label="Pendiente" icon="fas fa-spinner fa-pulse"></button>
+                                                    <button pButton
+                                                        *ngIf="pozo[col.field].estadoPozo.nombre == 'Correccion'"
+                                                        readonly='true'
+                                                        class="ui-button-danger ui-button-raised ui-button-rounded"
+                                                        label="Correccion" icon="fas fa-exclamation-circle"></button>
+                                                    <button pButton
+                                                        *ngIf="pozo[col.field].estadoPozo.nombre == 'Revision'"
+                                                        readonly='true'
+                                                        class="ui-button-warning ui-button-raised ui-button-rounded"
+                                                        label="Revision" icon="fas fa-exclamation-triangle"></button>
+                                                    <button pButton
+                                                        *ngIf="pozo[col.field].estadoPozo.nombre == 'Relevado'"
+                                                        readonly='true' class="ui-button-raised ui-button-rounded"
+                                                        label="Relevado" icon="fas fa-file-alt"></button>
+                                                    <button pButton *ngIf="pozo[col.field].estadoPozo.nombre == 'Listo'"
+                                                        readonly='true'
+                                                        class="ui-button-info ui-button-raised ui-button-rounded"
+                                                        label="Listo" icon="fas fa-check"></button>
+                                                    <button pButton
+                                                        *ngIf="pozo[col.field].estadoPozo.nombre == 'Subido'"
+                                                        readonly='true'
+                                                        class="ui-button-success ui-button-raised ui-button-rounded"
+                                                        label="Subido" icon="fas fa-cloud"></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                        <div class="card-footer">
+                            <div class="float-right">
+                                <!-- (deshabilitado) -->
+                                <button *ngIf="!selectedPozo" disabled pButton label="Cambiar Estado" icon="fas fa-redo-alt"
+                                    class="ui-button-info ui-button-raised ui-button-rounded">
+                                </button>
+                                <!-- (habilitado) -->
+                                <button *ngIf="selectedPozo" pButton label="Cambiar Estado" icon="fas fa-redo-alt"
+                                    class="ui-button-info ui-button-raised ui-button-rounded" data-toggle="modal" data-target="#modalCambiarEstado">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- MODAL AGREGAR -->
+<!-- ============================================================== -->
+<div class="modal fade" id="modalAgregarPozo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nuevo Pozo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" #cerrarAgregar>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form name="form" (ngSubmit)=" 
+                model.nombre && model.selectedArea && model.selectedEtapa
+                && cargarPozo(f);" #f="ngForm" novalidate>
+                <div class="modal-body">
+                    <div class="form-group required">
+                        <label class="control-label" for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" name="nombre" [(ngModel)]="model.nombre"
+                            #nombre="ngModel" autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !model.nombre" severity="error" text="Campo Obligatorio.">
+                        </p-message>
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="area">Area:</label>
+                        <select class="form-control" [(ngModel)]="model.selectedArea" name="selectedArea">
+                            <option *ngFor="let area of areas" [ngValue]="area">
+                                {{area.nombre}}
+                            </option>
+                        </select>
+                        <p-message *ngIf="f.submitted && !model.selectedArea" severity="error"
+                            text="Campo Obligatorio.">
+                        </p-message>
+                    </div>
+
+                    <div class="form-group required">
+                            <label class="control-label" for="etapa">Etapa:</label>
+                            <select class="form-control" [(ngModel)]="model.selectedEtapa" name="selectedEtapa">
+                                <option *ngFor="let etapa of etapas" [ngValue]="etapa">
+                                    {{etapa.nombre}}
+                                </option>
+                            </select>
+                            <p-message *ngIf="f.submitted && !model.selectedArea" severity="error"
+                                text="Campo Obligatorio.">
+                            </p-message>
+                        </div>
+
+                    <div class="form-group required">
+                        <label class="" for="coordenadas">Coordenadas:</label>
+                        <input type="text" class="form-control" name="coordenadas" [(ngModel)]="model.coordenadas"
+                            #coordenadas="ngModel" autocomplete="off" required />
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="" for="estado">Estado:</label>
+                        <select class="form-control" [(ngModel)]="model.selectedEstado" name="selectedEstado">
+                            <option [ngValue]="undefined">Pendiente</option>
+                            <option [ngValue]="'Relevado'">Relevado</option>
+                            <option [ngValue]="'Correccion'">Correccion</option>
+                            <option [ngValue]="'Revision'">Revision</option>
+                            <option [ngValue]="'Listo'">Listo</option>
+                            <option [ngValue]="'Subido'">Subido</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group required" *ngIf="model.selectedEstado">
+                        <label class="control-label">Fecha ({{model.selectedEstado}}):</label>
+                        <input class="form-control" type="date" [(ngModel)]="model.fecha" name="fecha" #fecha="ngModel">
+                        <ul class="parsley-errors-list filled" *ngIf="f.submitted && !model.fecha">
+                            <li class="parsley-required">Campo Obligatorio.</li>
+                        </ul>
+                    </div>
+
+                    <div class="form-group required" *ngIf="model.selectedEstado">
+                        <label class="control-label" for="relevador">Relevador:</label>
+                        <select class="form-control" [(ngModel)]="model.selectedRelevador" name="selectedRelevador">
+                            <option *ngFor="let relevador of relevadores" [ngValue]="relevador">
+                                {{relevador.nombre}} {{relevador.apellido}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button pButton class="ui-button-rounded ui-button-success" label="Aceptar" icon="fas fa-check"
+                        type="submit">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- MODAL CAMBIAR ESTADO -->
+<!-- ============================================================== -->
+<div class="modal fade" id="modalCambiarEstado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" *ngIf="selectedPozo">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cambiar Estado</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" #cerrarAgregar>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form name="form" (ngSubmit)="f.form.valid 
+            && model.selectedEstado
+            && editarPozo(f);" #f="ngForm" novalidate>
+                <div class="modal-body">
+                    <div class="form-group required">
+                        <label class="" for="estado">Estado:</label>
+                        <select class="form-control" [(ngModel)]="model.selectedEstado" name="selectedEstado">
+                            <option [ngValue]="undefined">Pendiente</option>
+                            <option [ngValue]="'Relevado'">Relevado</option>
+                            <option [ngValue]="'Correccion'">Correccion</option>
+                            <option [ngValue]="'Revision'">Revision</option>
+                            <option [ngValue]="'Listo'">Listo</option>
+                            <option [ngValue]="'Subido'">Subido</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group required" *ngIf="model.selectedEstado">
+                        <label class="control-label">Fecha ({{model.selectedEstado}}):</label>
+                        <input class="form-control" type="date" [(ngModel)]="model.fecha" name="fecha" #fecha="ngModel">
+                        <ul class="parsley-errors-list filled" *ngIf="f.submitted && !model.fecha">
+                            <li class="parsley-required">Campo Obligatorio.</li>
+                        </ul>
+                    </div>
+
+                    <div class="form-group required" *ngIf="model.selectedEstado">
+                        <label class="control-label" for="relevador">Relevador:</label>
+                        <select class="form-control" [(ngModel)]="model.selectedRelevador" name="selectedRelevador">
+                            <option *ngFor="let relevador of relevadores" [ngValue]="relevador">
+                                {{relevador.nombre}} {{relevador.apellido}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button pButton class="ui-button-rounded ui-button-success" label="Aceptar" icon="fas fa-check"
+                        type="submit" (click)="cerrarModalEditar()">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,156 @@
+<div [@routerTransition]>
+        <div class="br-mainpanel">
+            <div class="pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">
+                <h4 class="tx-gray-800 mg-b-5">Areas</h4>
+            </div>
+    
+            <div class="br-pagebody pd-x-20 pd-sm-x-30">
+                <div class="row row-sm">
+                    <div class="col-lg-12">
+                        <div class="card card-default mb-3">
+                            <div class="card-header">
+                                <div>
+                                    <a>
+                                        <strong style="text-decoration: none;color: #333;">Administración de Areas</strong>
+                                        <div class='pull-left'>
+                                        </div>
+                                    </a>
+                                    <button pButton class="ui-button-rounded float-right" label="Nueva Area"
+                                        icon="fas fa-plus" data-toggle="modal" data-target="#modalAgregarArea">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p-table #dt [columns]="cols" [value]="areas" selectionMode="single"
+                                    [(selection)]="selectedArea"  [paginator]="true" [rows]="12">
+                                    <ng-template pTemplate="header" let-columns>
+                                        <tr>
+                                            <th *ngFor="let col of columns">
+                                                {{col.header}}
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                                                <input *ngSwitchCase="'nombre'" class="form-control" type="text"
+                                                    (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)"
+                                                    style="width:100%">
+                                            </th>
+                                        </tr>
+                                    </ng-template>
+    
+                                    <ng-template pTemplate="body" let-areas let-columns="columns">
+                                        <tr [pSelectableRow]="areas">
+                                            <td *ngFor="let col of columns">
+                                                {{areas[col.field]}}
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </div>
+                            <div class="card-footer">
+                                <div class="pull-right">
+                                    <!--Boton Editar (Deshabilitado)-->
+                                    <button pButton *ngIf="!selectedArea" class="ui-button-rounded ui-button-warning"
+                                        label="Editar" icon="fas fa-pencil-alt" disabled>
+                                    </button>
+    
+                                    <!--Boton Editar (Habilitado)-->
+                                    <button pButton *ngIf="selectedArea" class="ui-button-rounded ui-button-warning"
+                                        label="Editar" icon="fas fa-pencil-alt" data-toggle="modal" data-target="#"
+                                        data-toggle="modal" data-target="#modalEditarArea">
+                                    </button>
+    
+                                    &nbsp;
+    
+                                    <!--Boton Eliminar (Deshabilitado)-->
+                                    <button pButton *ngIf="!selectedArea" class="ui-button-rounded ui-button-danger"
+                                        label="Eliminar" icon="fas fa-times" disabled>
+                                    </button>
+    
+                                    <!--Boton Eliminar (Habilitado)-->
+                                    <button pButton *ngIf="selectedArea" class="ui-button-rounded ui-button-danger"
+                                        label="Eliminar" icon="fas fa-times" data-toggle="modal" data-target="#"
+                                        (click)="eliminarArea()">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ============================================================== -->
+    <!-- MODAL AGREGAR -->
+    <!-- ============================================================== -->
+    <div class="modal fade" id="modalAgregarArea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nueva Area</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" #cerrarAgregar>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form (ngSubmit)="f.form.valid 
+                    && model.nombreArea
+                    
+                    && cargarArea(f);" #f="ngForm" novalidate>
+                    <div class="modal-body">
+    
+                        <div class="form-group required">
+                            <label class="control-label" for="nombreArea">Nombre:</label>
+                            <input type="text" class="form-control" name="nombreArea" [(ngModel)]="model.nombreArea"
+                                #nombreArea="ngModel" autocomplete="off" required />
+                            <p-message *ngIf="f.submitted && !model.nombreArea" severity="error"
+                                text="Campo Obligatorio."></p-message>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button pButton class="ui-button-rounded ui-button-success" label="Aceptar" icon="fas fa-check"
+                            type="submit">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+<!-- MODAL EDITAR -->
+<!-- ============================================================== -->
+<div class="modal fade" id="modalEditarArea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" *ngIf="selectedArea"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar Relevador</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" #cerrarEditar>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form (ngSubmit)="f.form.valid 
+            && selectedArea.nombre
+            
+            && editarArea(f);" #f="ngForm" novalidate autocomplete="off">
+            <div class="modal-body">
+
+                <div class="form-group required">
+                    <label class="control-label" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="selectedArea.nombre"
+                        #nombre="ngModel" autocomplete="off" required />
+                    <p-message *ngIf="f.submitted && !selectedArea.nombre" severity="error"
+                        text="Campo Obligatorio."></p-message>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button pButton class="ui-button-rounded ui-button-success" label="Aceptar" icon="fas fa-check"
+                    type="submit">
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

@@ -1,0 +1,25 @@
+<div class="br-mainpanel">
+    <div class="pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">
+        <h4 class="tx-gray-800 mg-b-5">RESUMEN DE POZOS</h4>
+    </div>
+
+    <div class="br-pagebody pd-x-20 pd-sm-x-30">
+        <div class="card">
+            <div class="card-header">
+                <p-selectButton [options]="types" [(ngModel)]="selectedType"></p-selectButton>
+            </div>
+            <div class="card-body">
+                <div *ngIf="selectedType == 'Etapas'">
+                    <app-por-etapas></app-por-etapas>
+                </div>
+                <div *ngIf="selectedType == 'Grafico Semanal'">
+                    <app-grafico-semanal></app-grafico-semanal>
+                </div>
+                <div *ngIf="selectedType == 'Grafico Acumulado'">
+                    <app-grafico-acumulado></app-grafico-acumulado>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

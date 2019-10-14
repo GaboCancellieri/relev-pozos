@@ -1,0 +1,254 @@
+<div [@routerTransition]>
+    <div class="br-mainpanel">
+        <div class="pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">
+            <h4 class="tx-gray-800 mg-b-5">Relevadores</h4>
+        </div>
+
+        <div class="br-pagebody pd-x-20 pd-sm-x-30">
+            <div class="row row-sm">
+                <div class="col-lg-12">
+                    <div class="card card-default mb-3">
+                        <div class="card-header">
+                            <div>
+                                <a>
+                                    <strong style="text-decoration: none;color: #333;">Administración de
+                                        Relevadores</strong>
+                                    <div class='pull-left'>
+                                    </div>
+                                </a>
+                                <button pButton class="ui-button-rounded float-right" label="Nuevo Relevador"
+                                    icon="fas fa-plus" data-toggle="modal" data-target="#modalAgregarRelevador">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p-table #dt [columns]="cols" [value]="relevadores" selectionMode="single"
+                                [(selection)]="selectedRelevador" [paginator]="true" [rows]="12"
+                                (onRowSelect)="setSelectedArea($event.data);">
+                                <ng-template pTemplate="header" let-columns>
+                                    <tr>
+                                        <th *ngFor="let col of columns">
+                                            {{col.header}}
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                                            <input *ngSwitchCase="'apellido'" class="form-control" type="text"
+                                                (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+                                            <input *ngSwitchCase="'nombre'" class="form-control" type="text"
+                                                (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+                                            <input *ngSwitchCase="'telefono'" class="form-control" type="text"
+                                                (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+                                            <input *ngSwitchCase="'mail'" class="form-control" type="text"
+                                                (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+                                            <input *ngSwitchCase="'area'" class="form-control" type="text"
+                                                (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+
+                                        </th>
+                                    </tr>
+                                </ng-template>
+
+                                <ng-template pTemplate="body" let-relevador let-columns="columns">
+                                    <tr [pSelectableRow]="relevador">
+                                        <td *ngFor="let col of columns">
+                                            <div *ngIf="relevador[col.field] && col.field != 'area'">
+                                                {{relevador[col.field]}}
+                                            </div>
+                                            <div *ngIf="relevador[col.field] && col.field == 'area'">
+                                                {{relevador[col.field].nombre}}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                        <div class="card-footer">
+                            <div class="pull-right">
+                                <!--Boton Editar (Deshabilitado)-->
+                                <button pButton *ngIf="!selectedRelevador" class="ui-button-rounded ui-button-warning"
+                                    label="Editar" icon="fas fa-pencil-alt" disabled>
+                                </button>
+
+                                <!--Boton Editar (Habilitado)-->
+                                <button pButton *ngIf="selectedRelevador" class="ui-button-rounded ui-button-warning"
+                                    label="Editar" icon="fas fa-pencil-alt" data-toggle="modal" data-target="#"
+                                    data-toggle="modal" data-target="#modalEditarRelevador">
+                                </button>
+
+                                &nbsp;
+
+                                <!--Boton Eliminar (Deshabilitado)-->
+                                <button pButton *ngIf="!selectedRelevador" class="ui-button-rounded ui-button-danger"
+                                    label="Eliminar" icon="fas fa-times" disabled>
+                                </button>
+
+                                <!--Boton Eliminar (Habilitado)-->
+                                <button pButton *ngIf="selectedRelevador" class="ui-button-rounded ui-button-danger"
+                                    label="Eliminar" icon="fas fa-times" data-toggle="modal" data-target="#"
+                                    (click)="eliminarRelevador()">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- MODAL AGREGAR -->
+<!-- ============================================================== -->
+<div class="modal fade" id="modalAgregarRelevador" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nuevo Relevador</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" #cerrarAgregar>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form (ngSubmit)="f.form.valid 
+                && model.nombre
+                && model.apellido
+                && model.telefono 
+                && model.mail
+                
+                && cargarRelevador(f);" #f="ngForm" novalidate autocomplete="off">
+                <div class="modal-body">
+
+                    <div class="form-group required">
+                        <label class="control-label" for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" name="nombre" [(ngModel)]="model.nombre"
+                            #nombre="ngModel" autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !model.nombre" severity="error" text="Campo Obligatorio.">
+                        </p-message>
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" name="apellido" [(ngModel)]="model.apellido"
+                            #apellido="ngModel" autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !model.apellido" severity="error" text="Campo Obligatorio.">
+                        </p-message>
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="telefono">Telefono:</label>
+                        <input type="text" class="form-control" name="telefono" [(ngModel)]="model.telefono"
+                            #telefono="ngModel" autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !model.telefono" severity="error" text="Campo Obligatorio.">
+                        </p-message>
+
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="mail">Mail:</label>
+                        <input type="text" class="form-control" name="mail" [(ngModel)]="model.mail" #Mail="ngModel"
+                            autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !model.mail" severity="error" text="Campo Obligatorio.">
+                        </p-message>
+
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="" for="area">Area:</label>
+                        <select class="form-control" [(ngModel)]="model.selectedArea" name="selectedArea">
+                            <option *ngFor="let area of areas" [ngValue]="area">
+                                {{area.nombre}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button pButton class="ui-button-rounded ui-button-success" label="Aceptar" icon="fas fa-check"
+                        type="submit">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- MODAL EDITAR -->
+<!-- ============================================================== -->
+<div class="modal fade" id="modalEditarRelevador" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    *ngIf="selectedRelevador" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Relevador</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" #cerrarEditar>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form (ngSubmit)="f.form.valid 
+                && selectedRelevador.nombre
+                && selectedRelevador.apellido
+                && selectedRelevador.telefono 
+                && selectedRelevador.mail
+                
+                && editarRelevador(f);" #f="ngForm" novalidate autocomplete="off">
+                <div class="modal-body">
+
+                    <div class="form-group required">
+                        <label class="control-label" for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" name="nombre" [(ngModel)]="selectedRelevador.nombre"
+                            #nombre="ngModel" autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !selectedRelevador.nombre" severity="error"
+                            text="Campo Obligatorio."></p-message>
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" name="apellido" [(ngModel)]="selectedRelevador.apellido"
+                            #apellido="ngModel" autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !selectedRelevador.apellido" severity="error"
+                            text="Campo Obligatorio."></p-message>
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="telefono">Telefono:</label>
+                        <input type="text" class="form-control" name="telefono" [(ngModel)]="selectedRelevador.telefono"
+                            #telefono="ngModel" autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !selectedRelevador.telefono" severity="error"
+                            text="Campo Obligatorio."></p-message>
+
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="control-label" for="mail">Mail:</label>
+                        <input type="text" class="form-control" name="mail" [(ngModel)]="selectedRelevador.mail"
+                            #Mail="ngModel" autocomplete="off" required />
+                        <p-message *ngIf="f.submitted && !selectedRelevador.mail" severity="error"
+                            text="Campo Obligatorio."></p-message>
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="" for="area">Area:</label>
+                        <select *ngIf="selectedArea" class="form-control" [(ngModel)]="selectedArea"
+                            name="selectedArea">
+                            <option *ngFor="let area of areas" [ngValue]="area"
+                                [selected]="area._id === selectedArea._id">
+                                {{area.nombre}}
+                            </option>
+                        </select>
+                        <select *ngIf="!selectedArea" class="form-control" [(ngModel)]="selectedArea"
+                            name="selectedArea">
+                            <option *ngFor="let area of areas" [ngValue]="area">
+                                {{area.nombre}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button pButton class="ui-button-rounded ui-button-success" label="Aceptar" icon="fas fa-check"
+                        type="submit">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

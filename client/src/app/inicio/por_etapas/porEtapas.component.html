@@ -1,0 +1,353 @@
+<div *ngIf="conteo">
+        <div class="row">
+                <div class="col-lg-3">
+                        <div class="bg-dark rounded overflow-hidden" style="border: 1px solid #000;">
+                            <div class="pd-25 d-flex align-items-center">
+                                <i class="fas fa-times fa-4x" style="color:white"></i>
+                                <div class="mg-l-20">
+                                    <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
+                                        style="color:white">SIN ASIGNAR</h6>
+                                        <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">
+                                            {{conteo.sinAsignar}}
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-danger rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-bell fa-4x" style="color:white"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
+                                    style="color:white">PRIMERA ETAPA</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-warning rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-stopwatch fa-4x" style="color:black"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
+                                    style="color:black">SEGUNDA ETAPA</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-success rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-flag-checkered fa-4x" style="color:white"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
+                                    style="color:white">TECERA ETAPA</h6>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-br-primary rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-spinner fa-pulse fa-2x" style="color:white"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10">
+                                    Pendientes</h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">
+                                    {{conteo.primeraEtapa.pendientes + conteo.segundaEtapa.pendientes + conteo.terceraEtapa.pendientes}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.primeraEtapa.pendientes}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.segundaEtapa.pendientes}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.terceraEtapa.pendientes}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-primary rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-file-alt fa-2x" style="color:white"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10">Relevados
+                                </h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">
+                                    {{conteo.primeraEtapa.relevados + conteo.segundaEtapa.relevados + conteo.terceraEtapa.relevados}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.primeraEtapa.relevados}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.segundaEtapa.relevados}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.terceraEtapa.relevados}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-pink rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-exclamation-circle fa-2x" style="color:white"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10">
+                                    Correccion</h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">
+                                    {{conteo.primeraEtapa.correccion + conteo.segundaEtapa.correccion + conteo.terceraEtapa.correccion}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.primeraEtapa.correccion}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.segundaEtapa.correccion}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.terceraEtapa.correccion}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-warning rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-exclamation-triangle fa-2x" style="color:black"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
+                                    style="color:black">Revision</h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1" style="color:black">
+                                    {{conteo.primeraEtapa.revision + conteo.segundaEtapa.revision + conteo.terceraEtapa.revision}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.primeraEtapa.revision}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.segundaEtapa.revision}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.terceraEtapa.revision}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-info rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-check fa-2x" style="color:white"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
+                                    style="color:white">Listos</h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1" style="color:white">
+                                    {{conteo.primeraEtapa.listos + conteo.segundaEtapa.listos + conteo.terceraEtapa.listos}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.primeraEtapa.listos}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.segundaEtapa.listos}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.terceraEtapa.listos}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-success rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-cloud fa-2x" style="color:white"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
+                                    style="color:white">Subidos</h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1" style="color:white">
+                                    {{conteo.primeraEtapa.subidos + conteo.segundaEtapa.subidos + conteo.terceraEtapa.subidos}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.primeraEtapa.subidos}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.segundaEtapa.subidos}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.terceraEtapa.subidos}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
