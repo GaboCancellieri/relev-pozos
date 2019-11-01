@@ -15,6 +15,7 @@ require('./models/region');
 require('./models/etapa');
 require('./models/operacion');
 require('./models/activo');
+require('./models/zona');
 
 // DECLARAR ROUTES
 var usuarioRoutes = require('./routes/usuario');

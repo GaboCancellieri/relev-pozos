@@ -1,0 +1,10 @@
+<div class="row" *ngIf="selectedRelevador">
+  <div class="card bg-teal tx-white bd-0" style="width: 100%;">
+    <div class="card-body">
+      <h5 *ngIf="selectedRelevador !== 'EQUIPO'" class="card-title tx-white tx-medium mg-b-10">{{selectedRelevador}}</h5>
+      <h5 *ngIf="selectedRelevador === 'EQUIPO'" class="card-title tx-white tx-medium mg-b-10">EQUIPO TERA</h5>
+    </div>
+  </div>
+</div>
+<p-chart type="bar" [data]="data" [options]="options"></p-chart>
+<p-chart type="bar" [data]="dataMensual" [options]="optionsMensual"></p-chart>

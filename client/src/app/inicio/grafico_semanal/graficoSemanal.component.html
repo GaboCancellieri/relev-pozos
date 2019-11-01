@@ -1,1 +1,49 @@
-<p-chart *ngIf="data" type="pie" [data]="data"></p-chart>
+<div class="row">
+    <div class="col-10">
+        <p-chart *ngIf="data" type="pie" [data]="data" [options]="options" [plugins]="pieChartPlugins"></p-chart>
+    </div>
+    <div class="col-2">
+        <div class="float-left">
+            <button pButton label="PRIMERA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;" style="margin: 1em;"
+                (click)="getConteoSemanal('1')"
+                ></button>
+            
+            <button pButton label="SEGUNDA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;" style="margin: 1em;"
+                (click)="getConteoSemanal('2')"></button>
+            
+            <button pButton label="TERCERA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;"
+                (click)="getConteoSemanal('3')"></button>
+            
+            <button pButton label="CUARTA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;"
+                (click)="getConteoSemanal('4')"></button>
+            
+            <button pButton label="QUINTA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;"
+                (click)="getConteoSemanal('5')"></button>
+            
+            <button pButton label="SEXTA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;"
+                (click)="getConteoSemanal('6')"></button>
+            
+            <button pButton label="SEPTIMA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;"
+                (click)="getConteoSemanal('7')"></button>
+            
+            <button pButton label="OCTAVA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;"
+                (click)="getConteoSemanal('8')"></button>
+            
+            <button pButton label="NOVENA SEMANA" icon="fas fa-clock"
+                class="ui-button-raised ui-button-rounded" style="margin: 1em;"
+                (click)="getConteoSemanal('9')"></button>
+            
+            <button pButton label="DECIMA SEMANA" icon="fas fa-clock" class="ui-button-raised ui-button-rounded" style="margin: 1em;"
+            (click)="getConteoSemanal('10')"
+                disabled="true"></button>
+        </div>
+    </div>
+</div>

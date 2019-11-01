@@ -8,8 +8,12 @@ var PozoController = require('../controllers/pozo');
 api.get('/',PozoController.getPozos);
 api.get('/:idPozo',PozoController.getPozo);
 api.get('/conteo/etapa',PozoController.getConteoEtapa);
-api.get('/conteo/semanal/etapa',PozoController.getConteoSemanal);
+api.get('/conteo/semanal/etapa/:semana',PozoController.getConteoSemanal);
 api.get('/conteo/acumulado/etapa',PozoController.getConteoAcumulado);
+api.get('/conteo/acumulado/por/etapa/:etapa',PozoController.getConteoAcumuladoPorEtapa);
+api.get('/conteo/:nomRelev/:semana',PozoController.getPozosRelevadorSemanal);
+api.get('/conteo/mes/por/relevador/:nomRelev',PozoController.getConteoPorMesRelevador);
+api.get('/conteo/acumulado/general/por/mes/',PozoController.getConteoPorMesGeneral);
 
 // PATCH MODIFICACION
 api.patch('/:idPozo',PozoController.editarPozo);

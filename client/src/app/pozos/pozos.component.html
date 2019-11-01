@@ -46,7 +46,7 @@
                                                 #filtroCoordenadas="ngModel"
                                                 (ngModelChange)="filtrarCoordenadas(filtroCoordenadas.value); reiniciarTabla();"
                                                 style="width:100%">
-                                                <input *ngSwitchCase="'etapa'" class="form-control" type="text"
+                                            <input *ngSwitchCase="'etapa'" class="form-control" type="text"
                                                 [(ngModel)]="model.filtroEtapa" name="filtroEtapa"
                                                 #filtroEtapa="ngModel"
                                                 (ngModelChange)="filtrarEtapa(filtroEtapa.value); reiniciarTabla();"
@@ -75,7 +75,7 @@
                                             <div *ngIf="pozo[col.field] && col.field === 'nombre'">
                                                 {{pozo[col.field]}}
                                             </div>
-                                            <div *ngIf="pozo[col.field] && col.field === 'region'">
+                                            <div *ngIf="pozo[col.field] && col.field === 'zona'">
                                                 {{pozo[col.field].nombre}}
                                             </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'yacimiento'">
@@ -89,30 +89,24 @@
                                             </div>
                                             <div
                                                 *ngIf="pozo.estado.estadoPozo.nombre != 'Pendiente' && col.field === 'fecha'">
-                                                {{pozo.estadoActual.fecha  | date: 'dd/MM/yyyy'}}
+                                                {{pozo.estado.fecha  | date: 'dd/MM/yyyy'}}
                                             </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'relevador'">
                                                 {{pozo[col.field].nombre}} {{pozo[col.field].apellido}}
                                             </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'etapa'">
-                                                    <div style="text-align: center">
-                                                        <button pButton
-                                                            *ngIf="pozo[col.field].nombre == 'Etapa 1'"
-                                                            readonly='true'
-                                                            class="ui-button-danger ui-button-raised"
-                                                            label="Etapa 1" icon="fas fa-bell"></button>
-                                                        <button pButton
-                                                            *ngIf="pozo[col.field].nombre == 'Etapa 2'"
-                                                            readonly='true'
-                                                            class="ui-button-warning ui-button-raised"
-                                                            label="Etapa 2" icon="fas fa-stopwatch"></button>
-                                                        <button pButton
-                                                            *ngIf="pozo[col.field].nombre == 'Etapa 3'"
-                                                            readonly='true'
-                                                            class="ui-button-success ui-button-raised"
-                                                            label="Etapa 3" icon="fas fa-flag-checkered"></button>
-                                                    </div>
+                                                <div style="text-align: center">
+                                                    <button pButton *ngIf="pozo[col.field].nombre == 'Etapa 1'"
+                                                        readonly='true' class="ui-button-danger ui-button-raised"
+                                                        label="Etapa 1" icon="fas fa-bell"></button>
+                                                    <button pButton *ngIf="pozo[col.field].nombre == 'Etapa 2'"
+                                                        readonly='true' class="ui-button-warning ui-button-raised"
+                                                        label="Etapa 2" icon="fas fa-stopwatch"></button>
+                                                    <button pButton *ngIf="pozo[col.field].nombre == 'Etapa 3'"
+                                                        readonly='true' class="ui-button-success ui-button-raised"
+                                                        label="Etapa 3" icon="fas fa-flag-checkered"></button>
                                                 </div>
+                                            </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'estado'">
                                                 <div style="text-align: center">
                                                     <button pButton
@@ -134,6 +128,12 @@
                                                         *ngIf="pozo[col.field].estadoPozo.nombre == 'Relevado'"
                                                         readonly='true' class="ui-button-raised ui-button-rounded"
                                                         label="Relevado" icon="fas fa-file-alt"></button>
+                                                    <button pButton
+                                                        *ngIf="pozo[col.field].estadoPozo.nombre == 'Reserva'"
+                                                        readonly='true'
+                                                        class="ui-button-info ui-button-raised ui-button-rounded"
+                                                        style="background-color: teal !important; color: white !important;"
+                                                        label="Reserva" icon="fas fa-archive"></button>
                                                     <button pButton *ngIf="pozo[col.field].estadoPozo.nombre == 'Listo'"
                                                         readonly='true'
                                                         class="ui-button-info ui-button-raised ui-button-rounded"
@@ -153,12 +153,21 @@
                         <div class="card-footer">
                             <div class="float-right">
                                 <!-- (deshabilitado) -->
-                                <button *ngIf="!selectedPozo" disabled pButton label="Cambiar Estado" icon="fas fa-redo-alt"
-                                    class="ui-button-info ui-button-raised ui-button-rounded">
+                                <button *ngIf="!selectedPozo" disabled pButton label="Cambiar Estado"
+                                    icon="fas fa-redo-alt" class="ui-button-info ui-button-raised ui-button-rounded">
                                 </button>
                                 <!-- (habilitado) -->
                                 <button *ngIf="selectedPozo" pButton label="Cambiar Estado" icon="fas fa-redo-alt"
-                                    class="ui-button-info ui-button-raised ui-button-rounded" data-toggle="modal" data-target="#modalCambiarEstado">
+                                    class="ui-button-info ui-button-raised ui-button-rounded" data-toggle="modal"
+                                    data-target="#modalCambiarEstado">
+                                </button>
+                                <!-- (deshabilitado) -->
+                                <button *ngIf="!selectedPozo" disabled pButton label="A Subido"
+                                    icon="fas fa-cloud" class="ui-button-success ui-button-raised ui-button-rounded">
+                                </button>
+                                <!-- (habilitado) -->
+                                <button *ngIf="selectedPozo" pButton label="A Subido" icon="fas fa-cloud"
+                                    class="ui-button-success ui-button-raised ui-button-rounded" (click)="aSubido()">
                                 </button>
                             </div>
                         </div>
@@ -207,16 +216,16 @@
                     </div>
 
                     <div class="form-group required">
-                            <label class="control-label" for="etapa">Etapa:</label>
-                            <select class="form-control" [(ngModel)]="model.selectedEtapa" name="selectedEtapa">
-                                <option *ngFor="let etapa of etapas" [ngValue]="etapa">
-                                    {{etapa.nombre}}
-                                </option>
-                            </select>
-                            <p-message *ngIf="f.submitted && !model.selectedArea" severity="error"
-                                text="Campo Obligatorio.">
-                            </p-message>
-                        </div>
+                        <label class="control-label" for="etapa">Etapa:</label>
+                        <select class="form-control" [(ngModel)]="model.selectedEtapa" name="selectedEtapa">
+                            <option *ngFor="let etapa of etapas" [ngValue]="etapa">
+                                {{etapa.nombre}}
+                            </option>
+                        </select>
+                        <p-message *ngIf="f.submitted && !model.selectedArea" severity="error"
+                            text="Campo Obligatorio.">
+                        </p-message>
+                    </div>
 
                     <div class="form-group required">
                         <label class="" for="coordenadas">Coordenadas:</label>
@@ -231,6 +240,7 @@
                             <option [ngValue]="'Relevado'">Relevado</option>
                             <option [ngValue]="'Correccion'">Correccion</option>
                             <option [ngValue]="'Revision'">Revision</option>
+                            <option [ngValue]="'Listo'">Reserva</option>
                             <option [ngValue]="'Listo'">Listo</option>
                             <option [ngValue]="'Subido'">Subido</option>
                         </select>
@@ -272,7 +282,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Cambiar Estado</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" #cerrarAgregar>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" #cerrarEditar>
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -287,20 +297,18 @@
                             <option [ngValue]="'Relevado'">Relevado</option>
                             <option [ngValue]="'Correccion'">Correccion</option>
                             <option [ngValue]="'Revision'">Revision</option>
+                            <option [ngValue]="'Reserva'">Reserva</option>
                             <option [ngValue]="'Listo'">Listo</option>
                             <option [ngValue]="'Subido'">Subido</option>
                         </select>
                     </div>
 
-                    <div class="form-group required" *ngIf="model.selectedEstado">
+                    <div class="form-group" *ngIf="model.selectedEstado">
                         <label class="control-label">Fecha ({{model.selectedEstado}}):</label>
                         <input class="form-control" type="date" [(ngModel)]="model.fecha" name="fecha" #fecha="ngModel">
-                        <ul class="parsley-errors-list filled" *ngIf="f.submitted && !model.fecha">
-                            <li class="parsley-required">Campo Obligatorio.</li>
-                        </ul>
                     </div>
 
-                    <div class="form-group required" *ngIf="model.selectedEstado">
+                    <div class="form-group" *ngIf="model.selectedEstado">
                         <label class="control-label" for="relevador">Relevador:</label>
                         <select class="form-control" [(ngModel)]="model.selectedRelevador" name="selectedRelevador">
                             <option *ngFor="let relevador of relevadores" [ngValue]="relevador">
@@ -311,7 +319,7 @@
                 </div>
                 <div class="modal-footer">
                     <button pButton class="ui-button-rounded ui-button-success" label="Aceptar" icon="fas fa-check"
-                        type="submit" (click)="cerrarModalEditar()">
+                        type="submit">
                     </button>
                 </div>
             </form>

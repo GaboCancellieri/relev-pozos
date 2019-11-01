@@ -23,7 +23,6 @@ export class PozoService {
         return this.http.get(this.pozoURL)
             .toPromise()
             .then(response => {
-                console.log(response.json().obj);
                 return response.json().obj as Pozo[];
             })
             .catch(this.handleError);
@@ -43,8 +42,8 @@ export class PozoService {
             .catch(this.handleError);
     }
 
-    getConteoSemanal(): Promise<any> {
-        return this.http.get(this.pozoURL + '/conteo/semanal/etapa')
+    getConteoSemanal(semana: string): Promise<any> {
+        return this.http.get(this.pozoURL + '/conteo/semanal/etapa/' + semana)
             .toPromise()
             .then(response => response.json().obj as any)
             .catch(this.handleError);
@@ -52,6 +51,34 @@ export class PozoService {
 
     getConteoAcumulado(): Promise<any> {
         return this.http.get(this.pozoURL + '/conteo/acumulado/etapa')
+            .toPromise()
+            .then(response => response.json().obj as any)
+            .catch(this.handleError);
+    }
+
+    getConteoAcumuladoPorEtapa(etapa: string): Promise<any> {
+        return this.http.get(this.pozoURL + '/conteo/acumulado/por/etapa/' + etapa)
+            .toPromise()
+            .then(response => response.json().obj as any)
+            .catch(this.handleError);
+    }
+
+    getRelevPozos(nomRelev: string, semana: string): Promise<any> {
+        return this.http.get(this.pozoURL + '/conteo/' + nomRelev + '/' + semana)
+            .toPromise()
+            .then(response => response.json().obj as any)
+            .catch(this.handleError);
+    }
+
+    getRelevMesPozos(nomRelev: string): Promise<any> {
+        return this.http.get(this.pozoURL + '/conteo/mes/por/relevador/' + nomRelev)
+            .toPromise()
+            .then(response => response.json().obj as any)
+            .catch(this.handleError);
+    }
+
+    getGeneralMensual(): Promise<any> {
+        return this.http.get(this.pozoURL + '/conteo/acumulado/general/por/mes/')
             .toPromise()
             .then(response => response.json().obj as any)
             .catch(this.handleError);
@@ -83,18 +110,17 @@ export class PozoService {
     // *** PATCH ***
     // *************
     editarPozo(
-        idPac: string,
-        nombrePac: string,
-        apellidoPac: string,
-        telefonoPac: string,
-        direccionPac: string,
-        barrioPac: string,
-        fechaNacimientoPac: Date): Promise<Pozo> {
-        return this.http.patch(this.pozoURL + '/' + idPac,
+        idPozo,
+        nombre,
+        coordenadas,
+        estado,
+        fecha,
+        idRelevador,
+        idEtapa): Promise<Pozo> {
+        return this.http.patch(this.pozoURL + '/' + idPozo,
             JSON.stringify({
-                nombrePozo: nombrePac,
-                apellidoPozo: apellidoPac, telefonoPozo: telefonoPac, direccionPozo: direccionPac,
-                barrioPozo: barrioPac, fechaNacimientoPozo: fechaNacimientoPac
+                nombre, coordenadas, estado, fecha,
+                idRelevador, idEtapa
             }), { headers: this.headers })
             .toPromise()
             .then(response => response.json().obj as Pozo)

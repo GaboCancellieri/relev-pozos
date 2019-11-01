@@ -8,9 +8,9 @@ import { PozoService } from 'src/app/pozos/pozo.service';
 })
 export class GraficoAcumuladoComponent implements OnInit {
     data: any;
-    labels = ['PRIMERA ETAPA', 'SEGUNDA ETAPA', 'TERCERA ETAPA'];
-    backgroundColor = ['#ff1100', '#dbc200', '#1dad00', '#F49917', '#17A2B7', '#23BE08'];
-    hoverBackgroundColor = ['#ff1100', '#dbc200', '#1dad00', '#F49917', '#17A2B7', '#23BE08'];
+    options: any;
+    backgroundColor = ['#ff1100', '#dbc200', '#1dad00'];
+    hoverBackgroundColor = ['#ff1100', '#dbc200', '#1dad00'];
 
     constructor(
         private pozoService: PozoService
@@ -19,6 +19,16 @@ export class GraficoAcumuladoComponent implements OnInit {
 
     ngOnInit() {
         this.getConteoAcumulado();
+        this.options = {
+            title: {
+                display: true,
+                text: 'Grafico Acumulado',
+                fontSize: 16
+            },
+            legend: {
+                position: 'top'
+            }
+        };
     }
 
     getConteoAcumulado() {
@@ -26,10 +36,11 @@ export class GraficoAcumuladoComponent implements OnInit {
         .then(conteoAcumulado => {
             console.log(conteoAcumulado);
             this.data = {
-                labels: this.labels,
+                labels: ['PRIMERA ETAPA (' + conteoAcumulado.porcentaje[0] + '%)', 'SEGUNDA ETAPA (' + conteoAcumulado.porcentaje[1] + '%)',
+                'TERCERA ETAPA (' + conteoAcumulado.porcentaje[2] + '%)'],
                 datasets: [
                     {
-                        data: conteoAcumulado,
+                        data: conteoAcumulado.conteo,
                         backgroundColor: this.backgroundColor,
                         hoverBackgroundColor: this.hoverBackgroundColor
                     }]

@@ -21,6 +21,15 @@
                             <div class="mg-l-20">
                                 <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
                                     style="color:white">PRIMERA ETAPA</h6>
+                                    <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">
+                                        {{conteo.primeraEtapa.pendientes + 
+                                        conteo.primeraEtapa.relevados + 
+                                        conteo.primeraEtapa.correccion + 
+                                        conteo.primeraEtapa.revision + 
+                                        conteo.primeraEtapa.reserva +
+                                        conteo.primeraEtapa.listos +
+                                        conteo.primeraEtapa.subidos}}
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -32,6 +41,15 @@
                             <div class="mg-l-20">
                                 <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
                                     style="color:black">SEGUNDA ETAPA</h6>
+                                    <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">
+                                        {{conteo.segundaEtapa.pendientes + 
+                                        conteo.segundaEtapa.relevados + 
+                                        conteo.segundaEtapa.correccion + 
+                                        conteo.segundaEtapa.revision + 
+                                        conteo.segundaEtapa.reserva +
+                                        conteo.segundaEtapa.listos +
+                                        conteo.segundaEtapa.subidos}}
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -43,6 +61,15 @@
                             <div class="mg-l-20">
                                 <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
                                     style="color:white">TECERA ETAPA</h6>
+                                    <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">
+                                        {{conteo.terceraEtapa.pendientes + 
+                                        conteo.terceraEtapa.relevados + 
+                                        conteo.terceraEtapa.correccion + 
+                                        conteo.terceraEtapa.revision + 
+                                        conteo.terceraEtapa.reserva +
+                                        conteo.terceraEtapa.listos +
+                                        conteo.terceraEtapa.subidos}}
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -247,6 +274,55 @@
                             <div style="text-align: center;">
                                 <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
                                 <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.terceraEtapa.revision}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-teal rounded overflow-hidden" style="border: 1px solid #000;">
+                        <div class="pd-25 d-flex align-items-center">
+                            <i class="fas fa-archive fa-2x" style="color:white"></i>
+                            <div class="mg-l-20">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"
+                                    style="color:white">Reserva</h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1" style="color:white">
+                                    {{conteo.primeraEtapa.reserva + conteo.segundaEtapa.reserva + conteo.terceraEtapa.reserva}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.primeraEtapa.reserva}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.segundaEtapa.reserva}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-secondary rounded overflow-hidden"
+                        style="height: 100%; border: 1px solid #636363;">
+                        <div class="pd-25">
+                            <div style="text-align: center;">
+                                <h6 class="tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10"></h6>
+                                <p class="tx-18 tx-white tx-lato tx-bold mg-b-2 lh-1">{{conteo.terceraEtapa.reserva}}</p>
                             </div>
                         </div>
                     </div>

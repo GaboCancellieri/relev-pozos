@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
+import { ChartsModule } from 'ng2-charts';
 
 // PrimeNG
 import {AccordionModule, CalendarModule, MenuItem} from 'primeng/primeng';
@@ -37,6 +38,7 @@ import { MapComponent } from './map/map.component';
 import { PorEtapasComponent } from './inicio/por_etapas/porEtapas.component';
 import { GraficoSemanalComponent } from './inicio/grafico_semanal/graficoSemanal.component';
 import { GraficoAcumuladoComponent } from './inicio/grafico_acumulado/graficoAcumulado.component';
+import { GraficoAcumuladoEtapaComponent } from './inicio/grafico_acumulado_etapa/graficoAcumuladoEtapa.component';
 
 // SERVICIOS
 import { AuthenticationService } from './auth/auth.service';
@@ -49,6 +51,8 @@ import {PozoService} from './pozos/pozo.service';
 import { AreaService } from './areas/area.service';
 import { PermissionService } from './usuario/permiso.service';
 import { EtapaService } from './etapas/etapa.service';
+import { RendimientoComponent } from './rendimiento/rendimiento.component';
+import { PorRelevadorComponent } from './rendimiento/porRelevador/porRelevador.component';
 
 @NgModule({
   declarations: [
@@ -65,13 +69,17 @@ import { EtapaService } from './etapas/etapa.service';
     MapComponent,
     PorEtapasComponent,
     GraficoSemanalComponent,
-    GraficoAcumuladoComponent
+    GraficoAcumuladoComponent,
+    GraficoAcumuladoEtapaComponent,
+    RendimientoComponent,
+    PorRelevadorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpModule,
+    ChartsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDx-re1pqzN3ABWZiYS11d3JtvS75tTrEE'
     }),

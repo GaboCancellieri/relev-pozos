@@ -20,6 +20,7 @@ import { Etapa } from '../etapas/etapa';
 })
 export class PozoComponent implements OnInit {
   @ViewChild('cerrarAgregar') cerrarAgregar: ElementRef;
+  @ViewChild('cerrarEditar') cerrarEditar: ElementRef;
 
   model: any = {};
   pozos: Pozo[] = [];
@@ -57,7 +58,7 @@ export class PozoComponent implements OnInit {
       { field: 'relevador', header: 'Relevador' },
       { field: 'yacimiento', header: 'Yacimiento' },
       { field: 'provincia', header: 'Provincia' },
-      { field: 'region', header: 'Region' },
+      { field: 'zona', header: 'Zona' },
       { field: 'coordenadas', header: 'Coordenadas' },
     ];
   }
@@ -70,6 +71,7 @@ export class PozoComponent implements OnInit {
       .then(pozos => {
         this.pozos = pozos;
         this.auxPozos = pozos;
+        console.log(pozos)
       });
   }
 
@@ -132,6 +134,105 @@ export class PozoComponent implements OnInit {
       });
   }
 
+  editarPozo(f: NgForm) {
+    let estado = 'Pendiente';
+    let fecha = new Date();
+    let idRelevador;
+
+    if (this.model.selectedEstado) {
+      estado = this.model.selectedEstado;
+    }
+
+    if (this.model.fecha) {
+      fecha = this.model.fecha;
+    }
+
+    if (this.model.selectedRelevador) {
+      idRelevador = this.model.selectedRelevador._id;
+    } else {
+      idRelevador = this.selectedPozo.relevador._id;
+    }
+
+    this.pozoService.editarPozo(this.selectedPozo._id, this.selectedPozo.nombre, this.selectedPozo.coordenadas,
+      estado, fecha, idRelevador, this.selectedPozo.etapa._id)
+      .then(pozoEditado => {
+        // cierro el modal
+        this.cerrarEditar.nativeElement.click();
+
+        // Muestro un mensajito de Agregado con Éxito
+        Swal.fire({
+          type: 'success',
+          title: 'Editado!',
+          text: 'Se ha editado el pozo correctamente.',
+          showConfirmButton: false,
+          timer: 1500
+        });
+
+        let i = 0;
+        for (const pozo of this.auxPozos) {
+          if (pozo._id === pozoEditado._id) {
+            this.auxPozos[i] = pozoEditado;
+          }
+          i++;
+        }
+
+        this.model.filtroNombre = null;
+        this.model.filtroFecha = null;
+        this.model.filtroArea = null;
+        this.model.filtroCoordenadas = null;
+        this.model.filtroEstado = null;
+        this.model.filtroRelevador = null;
+        this.model.filtroEtapa = null;
+        this.pozos = this.auxPozos;
+
+        // Reseteo el formulario/modal para que no haya nada en los input cuando se vuelva a abrir
+        this.model = {};
+        f.resetForm();
+      });
+
+  }
+
+  aSubido() {
+    const fecha = new Date();
+
+    this.pozoService.editarPozo(this.selectedPozo._id, this.selectedPozo.nombre, this.selectedPozo.coordenadas,
+      'Subido', fecha, this.selectedPozo.relevador._id, this.selectedPozo.etapa._id)
+      .then(pozoEditado => {
+        // cierro el modal
+        this.cerrarEditar.nativeElement.click();
+
+        // Muestro un mensajito de Agregado con Éxito
+        Swal.fire({
+          type: 'success',
+          title: 'Subido!',
+          text: 'Se ha subido el pozo correctamente.',
+          showConfirmButton: false,
+          timer: 1500
+        });
+
+        let i = 0;
+        for (const pozo of this.auxPozos) {
+          if (pozo._id === pozoEditado._id) {
+            this.auxPozos[i] = pozoEditado;
+          }
+          i++;
+        }
+
+        this.model.filtroNombre = null;
+        this.model.filtroFecha = null;
+        this.model.filtroArea = null;
+        this.model.filtroCoordenadas = null;
+        this.model.filtroEstado = null;
+        this.model.filtroRelevador = null;
+        this.model.filtroEtapa = null;
+        this.pozos = this.auxPozos;
+
+        // Reseteo el formulario/modal para que no haya nada en los input cuando se vuelva a abrir
+        this.model = {};
+      });
+
+  }
+
   reiniciarTabla() {
     if (!this.model.filtroNombre && !this.model.filtroFecha && !this.model.filtroArea &&
       !this.model.filtroCoordenadas && !this.model.filtroEstado && !this.model.filtroRelevador && !this.model.filtroEtapa) {
@@ -167,7 +268,7 @@ export class PozoComponent implements OnInit {
     this.pozos = this.pozos.filter(pozo => pozo.relevador);
     this.pozos = this.pozos.filter(pozo =>
       (pozo.relevador.nombre.toLowerCase().includes(relevador.toLowerCase()) ||
-      pozo.relevador.apellido.toLowerCase().includes(relevador.toLowerCase())
+        pozo.relevador.apellido.toLowerCase().includes(relevador.toLowerCase())
       ));
   }
 }

@@ -22,6 +22,7 @@ var PozoSchema = Schema({
         type: String,
         unique: true
     },
+    fechaRelevo: Date,
     coordenadas: Coordenadas,
     etapa: {
         type: Schema.Types.ObjectId,
@@ -51,6 +52,10 @@ var PozoSchema = Schema({
     region: {
         type: Schema.Types.ObjectId,
         ref: 'Region'
+    },
+    zona: {
+        type: Schema.Types.ObjectId,
+        ref: 'Zona'
     },
     provincia: {
         type: Schema.Types.ObjectId,

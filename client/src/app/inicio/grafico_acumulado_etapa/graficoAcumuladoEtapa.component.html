@@ -1,0 +1,14 @@
+<h5 style="text-align: center;"><strong>Gráfico acumulado por etapas</strong></h5>
+&nbsp;
+&nbsp;
+<div class="row">
+    <div class="col-lg-4" style="text-align: center">
+        <p-chart *ngIf="dataEtapa1" type="pie" [data]="dataEtapa1" [options]="options1"></p-chart>
+    </div>
+    <div class="col-lg-4" style="text-align: center">
+        <p-chart *ngIf="dataEtapa2" type="pie" [data]="dataEtapa2" [options]="options2"></p-chart>
+    </div>
+    <div class="col-lg-4" style="text-align: center">
+        <p-chart *ngIf="dataEtapa3" type="pie" [data]="dataEtapa3" [options]="options3"></p-chart>
+    </div>
+</div>

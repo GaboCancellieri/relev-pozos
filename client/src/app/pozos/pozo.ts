@@ -9,6 +9,7 @@ import { AreaConcesion } from './types/area_concesion';
 import { AreaReserva } from './types/area_reserva';
 import { Region } from './types/region';
 import { Provincia } from './types/provincia';
+import { Zona } from './types/zona';
 
 export class Pozo {
     _id: string;
@@ -18,6 +19,7 @@ export class Pozo {
     areaConcesion: AreaConcesion;
     areaReserva: AreaReserva;
     region: Region;
+    zona: Zona;
     provincia: Provincia;
     coordenadas: Coordenadas;
     etapa: Etapa;

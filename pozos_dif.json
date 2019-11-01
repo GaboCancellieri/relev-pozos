@@ -1,0 +1,1716 @@
+{
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.Nq.RN-79",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892afbdd8c62532f5d94a4"),
+        "fecha": "2019-08-28T03:00:00.000Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc20f"),
+    "coordenadas": {
+        "longitud": "-68.17190612999997",
+        "latitud": "-38.73112544999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da5028f54350612e0640e8a")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e7"),
+    "nombre": "YPF.SC.EG-157",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1dd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.474Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-69.28618777999998",
+        "latitud": "-46.46801112999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc452"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce24"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcebf"),
+    "zona": ObjectId("5da4ffaf54350612e0640d57"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc321"),
+    "nombre": "YPF.Nq.SCB.e-3",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24e"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d3"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.478Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc20f"),
+    "coordenadas": {
+        "longitud": "-68.72630689999994",
+        "latitud": "-37.63117760999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc450"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce3a"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dced7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc323"),
+    "nombre": "YPF.RN.PuB-17",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24e"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e5"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.478Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.98464394999996",
+        "latitud": "-37.66293878999994"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc450"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce38"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dced9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e7"),
+    "nombre": "YPF.SC.EG.a-195",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1dd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.484Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-69.30017549999997",
+        "latitud": "-46.473606779999955"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc452"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce24"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcebf"),
+    "zona": ObjectId("5da4ffaf54350612e0640d57"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e7"),
+    "nombre": "YPF.SC.EG-640",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1dd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.484Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-69.29739657999994",
+        "latitud": "-46.468300099999965"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc452"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce24"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcebf"),
+    "zona": ObjectId("5da4ffaf54350612e0640d57"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e7"),
+    "nombre": "YPF.SC.EG-153",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1dd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.484Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-69.28005295999998",
+        "latitud": "-46.47004141999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc452"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce24"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcebf"),
+    "zona": ObjectId("5da4ffaf54350612e0640d57"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-99",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.485Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.74004584999994",
+        "latitud": "-46.666730239999936"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-969",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.486Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.67232799999994",
+        "latitud": "-46.68218286999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc357"),
+    "nombre": "YPF.SC.PT-237",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.488Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.90053485999994",
+        "latitud": "-46.761099429999945"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce4c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc35b"),
+    "nombre": "YPF.SC.LC-405",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1dd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.488Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-69.11940169999997",
+        "latitud": "-46.49518684999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc452"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce24"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcebf"),
+    "zona": ObjectId("5da4ffaf54350612e0640d57"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc35b"),
+    "nombre": "YPF.SC.LC-407",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1dd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.488Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-69.10276561999996",
+        "latitud": "-46.49421344999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc452"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce24"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcebf"),
+    "zona": ObjectId("5da4ffaf54350612e0640d57"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc37f"),
+    "nombre": "YPF.SC.EC-373",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.490Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.88758528999995",
+        "latitud": "-46.673446109999986"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce4c"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc363"),
+    "nombre": "YPF.Ch.B-89",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.491Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc217"),
+    "coordenadas": {
+        "longitud": "-67.62789548999996",
+        "latitud": "-45.74871711999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce12"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d54"),
+    "relevador": ObjectId("5d89367a03ef6a0290fd0055")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-926",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.491Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.66512639999996",
+        "latitud": "-46.69489289999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-904",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.491Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.65529211999996",
+        "latitud": "-46.67906646999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-921",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.492Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.66605364999998",
+        "latitud": "-46.673966339999936"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-984",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.492Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.67751165999994",
+        "latitud": "-46.68588692999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CLE.x-1",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.492Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.55840382999997",
+        "latitud": "-46.676392659999976"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc31f"),
+    "nombre": "YPF.RN.BE.x-2",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24e"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e5"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.495Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.09654523999995",
+        "latitud": "-37.634189609999964"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b27"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc450"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce38"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dced9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc323"),
+    "nombre": "YPF.RN.PuBO.x-1",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24e"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e5"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.521Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.97606918999998",
+        "latitud": "-37.65106227999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc450"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce38"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dced9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc323"),
+    "nombre": "YPF.RN.VV-1",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24e"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e5"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.521Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.07031000999996",
+        "latitud": "-37.63823648999994"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc450"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce38"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dced9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2f3"),
+    "nombre": "Pi.Nq.PL-1046",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.521Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc20f"),
+    "coordenadas": {
+        "longitud": "-69.06193328999996",
+        "latitud": "-38.81105334999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44e"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce28"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcec5"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2f3"),
+    "nombre": "Cha.Nq.PL-1017",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.521Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc20f"),
+    "coordenadas": {
+        "longitud": "-69.06707245999996",
+        "latitud": "-38.814815469999985"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44e"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce28"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcec5"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc30b"),
+    "nombre": "Pi.Nq.BBG-48p",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.522Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc20f"),
+    "coordenadas": {
+        "longitud": "-69.08857898999997",
+        "latitud": "-38.82280739999993"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44e"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce28"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcec5"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc311"),
+    "nombre": "NBG.2",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.522Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc20f"),
+    "coordenadas": {
+        "longitud": "-69.12820766999994",
+        "latitud": "-38.84243514999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44e"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce28"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcec5"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc313"),
+    "nombre": "YPF.Nq.-448",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.522Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc20f"),
+    "coordenadas": {
+        "longitud": "-69.15080294999996",
+        "latitud": "-38.90516334999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44e"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce2e"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcecb"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc31f"),
+    "nombre": "YPF.RN.EB.x-2",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24e"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e5"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.522Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.16639323999993",
+        "latitud": "-37.59517852999994"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc450"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce38"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dced5"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc323"),
+    "nombre": "YPF.RN.PuB-122",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24e"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e5"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.522Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.96001696999997",
+        "latitud": "-37.66542397999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc450"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce38"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dced9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc357"),
+    "nombre": "YPF.SC.PT.a-285",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.523Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-68.06018906999998",
+        "latitud": "-46.760668529999975"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce4c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc37d"),
+    "nombre": "YPF.SC.ED-279",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.526Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-68.14624037999994",
+        "latitud": "-46.76784651999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce4c"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc37d"),
+    "nombre": "YPF.SC.ED-201",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.526Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-68.11319020999997",
+        "latitud": "-46.75748599999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce4c"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc37d"),
+    "nombre": "YPF.SC.ED-61",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.526Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-68.11209902999997",
+        "latitud": "-46.76972810999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce4c"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc37d"),
+    "nombre": "YPF.SC.ED-94",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.526Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-68.04059623999996",
+        "latitud": "-46.773792999999955"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce4c"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc363"),
+    "nombre": "YPF.Ch.B-210",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.528Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc217"),
+    "coordenadas": {
+        "longitud": "-67.61951332999996",
+        "latitud": "-45.74884105999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce12"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d54"),
+    "relevador": ObjectId("5d89367a03ef6a0290fd0055")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc363"),
+    "nombre": "YPF.Ch.B-88",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.528Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc217"),
+    "coordenadas": {
+        "longitud": "-67.62787548999995",
+        "latitud": "-45.75005745999994"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce12"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d54"),
+    "relevador": ObjectId("5d89367a03ef6a0290fd0055")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc363"),
+    "nombre": "YPF.Ch.B-24",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.528Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc217"),
+    "coordenadas": {
+        "longitud": "-67.63445187999997",
+        "latitud": "-45.75020823999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce12"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d54"),
+    "relevador": ObjectId("5d89367a03ef6a0290fd0055")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc363"),
+    "nombre": "YPF.Ch.B-14",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.529Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc217"),
+    "coordenadas": {
+        "longitud": "-67.63620278999997",
+        "latitud": "-45.74955436999994"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce12"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d54"),
+    "relevador": ObjectId("5d89367a03ef6a0290fd0055")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc363"),
+    "nombre": "YPF.Ch.B-324",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.529Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc217"),
+    "coordenadas": {
+        "longitud": "-67.62003479999998",
+        "latitud": "-45.74697593999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce12"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d54"),
+    "relevador": ObjectId("5d89367a03ef6a0290fd0055")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc363"),
+    "nombre": "YPF.Ch.B-50",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.529Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc217"),
+    "coordenadas": {
+        "longitud": "-67.62954805999993",
+        "latitud": "-45.74945672999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce12"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcef9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d54"),
+    "relevador": ObjectId("5d89367a03ef6a0290fd0055")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-332",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.529Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.73905184999995",
+        "latitud": "-46.66381282999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-149",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.529Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.75675317999998",
+        "latitud": "-46.659290419999934"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.O-75",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.529Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.76338313999997",
+        "latitud": "-46.66848744999993"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-330",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.529Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.73520464999996",
+        "latitud": "-46.65510036999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-6",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.530Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.70178360999995",
+        "latitud": "-46.652450219999935"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-64",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.530Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.73073454999997",
+        "latitud": "-46.65447782999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-48",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.530Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.72638783999997",
+        "latitud": "-46.65098014999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-19",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.530Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.69531864999993",
+        "latitud": "-46.655628579999984"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL.xp-1809",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.530Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.74356679999994",
+        "latitud": "-46.65364882999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-1114",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.530Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.76142774999994",
+        "latitud": "-46.66042421999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-329",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.530Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.73427890999994",
+        "latitud": "-46.65207678999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b29"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-205",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.17760479999998",
+        "latitud": "-38.71253718999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-200",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.16465408999994",
+        "latitud": "-38.72085881999993"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN.a-21",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.17077674999996",
+        "latitud": "-38.714416669999935"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN.a-9",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.18135724999996",
+        "latitud": "-38.70711367999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-122",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.18765788999997",
+        "latitud": "-38.71231831999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc3dd"),
+    "nombre": "YPF.RN.CG.x-1",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.16976269999998",
+        "latitud": "-38.71245609999994"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-81",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.19414382999997",
+        "latitud": "-38.70277956999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-104",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.13164325999998",
+        "latitud": "-38.74164282999993"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN.a-17",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.19828157999996",
+        "latitud": "-38.70798761999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN.a-26",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.20011797999996",
+        "latitud": "-38.69174972999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-117d",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.17685791999997",
+        "latitud": "-38.718513239999936"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-121",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.19409193999996",
+        "latitud": "-38.71406850999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-136",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.19455602999994",
+        "latitud": "-38.702926539999964"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-199",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.17070868999997",
+        "latitud": "-38.718316639999955"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-51",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.19002145999997",
+        "latitud": "-38.70033693999994"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2c9"),
+    "nombre": "YPF.RN.RN-75",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1c7"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.531Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.18303925999999",
+        "latitud": "-38.69366746999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce0c"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcea7"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "YPF.RN.EFO-28",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.85887082999994",
+        "latitud": "-39.01712132999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "YPF.RN.EFO-27",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.87195362999995",
+        "latitud": "-39.014097009999944"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "YPF.RN.EFO-25",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.87410310999996",
+        "latitud": "-39.01309768999994"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "YPF.RN.EFO.a-7",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.85523303999997",
+        "latitud": "-39.008583579999936"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "Bs.RN.EFO-73",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.88735448999995",
+        "latitud": "-39.01514691999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "Bs.RN.EFO-72",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.88088581999995",
+        "latitud": "-39.01454801999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "Bs.RN.EFO-75",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.86799215999997",
+        "latitud": "-39.01285479999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "Apa.RN.EFO-103",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.85017832999995",
+        "latitud": "-39.02053017999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "Apa.RN.EFO-87",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.88755579999997",
+        "latitud": "-39.015312679999965"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "APA.RN.EFO-104(d)",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.86737572999994",
+        "latitud": "-39.012805759999935"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "YEA.RN.EFO.a-360(d)",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.81580247999995",
+        "latitud": "-39.00656649999996"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2d3"),
+    "nombre": "YEA.RN.EFO-369(d)",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1d1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-67.81578636999996",
+        "latitud": "-39.00691662999998"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc448"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce16"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceb1"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc323"),
+    "nombre": "YPF.RN.PuB.a-177",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24e"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e5"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.532Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc211"),
+    "coordenadas": {
+        "longitud": "-68.05651770999998",
+        "latitud": "-37.637026839999976"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc450"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce38"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dced9"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-905",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.533Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.65285189999997",
+        "latitud": "-46.68073778999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-906",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.533Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.65570153999994",
+        "latitud": "-46.68218886999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-1986",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.533Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.61321998999995",
+        "latitud": "-46.66121528999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2f3"),
+    "nombre": "Cha.Nq.PL-1014",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24c"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1e1"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.533Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc20f"),
+    "coordenadas": {
+        "longitud": "-69.06403821999999",
+        "latitud": "-38.813155189999975"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44e"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce28"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dcec5"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5d"),
+    "relevador": ObjectId("5da502a954350612e0640e90")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL-943",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.537Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.67072229999997",
+        "latitud": "-46.69767800999995"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+} {
+    "yacimiento": ObjectId("5d8a3970dd8c62532f5dc2e9"),
+    "nombre": "YPF.SC.CL.a-1949",
+    "region": ObjectId("5d8a38d5dd8c62532f5dc24a"),
+    "activo": ObjectId("5d8a3824dd8c62532f5dc1cd"),
+    "estado": {
+        "estadoPozo": ObjectId("5d892887dd8c62532f5d93a0"),
+        "fecha": "2019-09-24T18:42:09.538Z"
+    },
+    "provincia": ObjectId("5d8a3887dd8c62532f5dc215"),
+    "coordenadas": {
+        "longitud": "-67.55956291999996",
+        "latitud": "-46.67996025999997"
+    },
+    "etapa": ObjectId("5d894234dd8c62532f5d9b2b"),
+    "operacion": ObjectId("5d8a39cfdd8c62532f5dc44c"),
+    "areaConcesion": ObjectId("5d8a5a14dd8c62532f5dce10"),
+    "areaReserva": ObjectId("5d8a5a73dd8c62532f5dceab"),
+    "zona": ObjectId("5da4ffaf54350612e0640d5a"),
+    "relevador": ObjectId("5da502c254350612e0640e9b")
+}
