@@ -10,15 +10,6 @@ function getPozos(req, res) {
     Pozo.find({})
         .populate('estado.estadoPozo')
         .populate('relevador')
-        .populate('etapa')
-        //.populate('areaConcesion')
-        //.populate('areaReserva')
-        .populate('provincia')
-        //.populate('region')
-        .populate('zona')
-        //.populate('activo')
-        //.populate('operacion')
-        .populate('yacimiento')
         .exec((err, pozos) => {
             if (err) {
                 return res.status(404).json({
@@ -41,8 +32,8 @@ function getPozos(req, res) {
 
 function getPozo(req, res) {
     Pozo.findById({
-            '_id': req.params.idPozo
-        })
+        '_id': req.params.idPozo
+    })
         .exec(function (err, pozo) {
             if (err) {
                 return res.status(400).json({
@@ -85,10 +76,10 @@ function convertirFecha(st) {
 
 function cargarRelevos() {
     Pozo.find({
-            'nombre': {
-                $in: nombres
-            }
-        })
+        'nombre': {
+            $in: nombres
+        }
+    })
         .exec((err, pozos) => {
             for (const pozo of pozos) {
                 for (const nf of nombreFecha) {
@@ -101,20 +92,35 @@ function cargarRelevos() {
         });
 }
 
+var nombres = ["YPF.TF.LC-1A",
+"PAE.TF.LSN-38",
+"LSNQ-28",
+"YPF.TF.LS-3A",
+"YPF.TF.LS-4A",
+"YPF.TF.LS-2A",
+"YPF.TF.LS-1A",
+"YPF.TF.CN-26/I",
+"CL.a-5",
+"YPF.TF.CL-24",
+"YPF.TF.CL-7",
+"YPF.TF.CL-25",
+"YPF.TF.CL-2A"]
+
 function cargarSubidos() {
-    Pozo.find({})
+    Pozo.find({
+        
+    })
         .exec((err, pozos) => {
-           
+
         });
 }
 
 function getConteoEtapa(req, res) {
     // convertirFechas();
     // cargarRelevos();    
-    // cargarSubidos();
+    cargarSubidos();
     Pozo.find({})
         .populate('estado.estadoPozo')
-        .populate('etapa')
         .exec(function (err, pozos) {
             if (err) {
                 return res.status(400).json({
@@ -163,9 +169,9 @@ function getConteoEtapa(req, res) {
             let subidos = 0;
 
             for (const pozo of pozos) {
-                if (pozo.etapa.nombre === "Sin Asignar") {
+                if (pozo.etapa === "Sin Asignar") {
                     conteoEtapa.sinAsignar++;
-                } else if (pozo.etapa.nombre === "Etapa 1") {
+                } else if (pozo.etapa === "Etapa 1") {
                     if (pozo.estado.estadoPozo.nombre === 'Pendiente') {
                         conteoEtapa.primeraEtapa.pendientes++;
                     } else if (pozo.estado.estadoPozo.nombre === 'Relevado') {
@@ -181,7 +187,7 @@ function getConteoEtapa(req, res) {
                     } else if (pozo.estado.estadoPozo.nombre === 'Subido') {
                         conteoEtapa.primeraEtapa.subidos++;
                     }
-                } else if (pozo.etapa.nombre === "Etapa 2") {
+                } else if (pozo.etapa === "Etapa 2") {
                     if (pozo.estado.estadoPozo.nombre === 'Pendiente') {
                         conteoEtapa.segundaEtapa.pendientes++;
                     } else if (pozo.estado.estadoPozo.nombre === 'Relevado') {
@@ -197,7 +203,7 @@ function getConteoEtapa(req, res) {
                     } else if (pozo.estado.estadoPozo.nombre === 'Subido') {
                         conteoEtapa.segundaEtapa.subidos++;
                     }
-                } else if (pozo.etapa.nombre === "Etapa 3") {
+                } else if (pozo.etapa === "Etapa 3") {
                     if (pozo.estado.estadoPozo.nombre === 'Pendiente') {
                         conteoEtapa.terceraEtapa.pendientes++;
                     } else if (pozo.estado.estadoPozo.nombre === 'Relevado') {
@@ -225,8 +231,8 @@ function getConteoEtapa(req, res) {
 
 function getConteoSemanal(req, res) {
     EstadoPozo.findOne({
-            'nombre': 'Subido'
-        })
+        'nombre': 'Subido'
+    })
         .exec((error, estadoPozo) => {
             if (error) {
                 return res.status(400).json({
@@ -289,18 +295,18 @@ function getConteoSemanal(req, res) {
             }
 
             Pozo.find({
-                    $and: [{
-                            'estado.fecha': {
-                                "$gte": fechaMin,
-                                "$lte": fechaMax
-                            }
-                        },
-                        {
-                            'estado.estadoPozo': estadoPozo.id
-                        }
-                    ]
-                })
-                .populate('etapa')
+                $and: [{
+                    'estado.fecha': {
+                        "$gte": fechaMin,
+                        "$lte": fechaMax
+                    }
+                },
+                {
+                    'estado.estadoPozo': estadoPozo.id
+                }
+                ]
+            })
+
                 .exec(function (err, pozos) {
                     if (err) {
                         return res.status(400).json({
@@ -314,11 +320,11 @@ function getConteoSemanal(req, res) {
                     let tercera = 0;
 
                     for (const pozo of pozos) {
-                        if (pozo.etapa.nombre === 'Etapa 1') {
+                        if (pozo.etapa === 'Etapa 1') {
                             primera++;
-                        } else if (pozo.etapa.nombre === 'Etapa 2') {
+                        } else if (pozo.etapa === 'Etapa 2') {
                             segunda++;
-                        } else if (pozo.etapa.nombre === 'Etapa 3') {
+                        } else if (pozo.etapa === 'Etapa 3') {
                             tercera++;
                         }
                     }
@@ -342,8 +348,8 @@ function getConteoSemanal(req, res) {
 
 function getConteoAcumulado(req, res) {
     EstadoPozo.findOne({
-            nombre: 'Subido'
-        })
+        nombre: 'Subido'
+    })
         .exec((error, estadoPozo) => {
             if (error) {
                 return res.status(400).json({
@@ -360,9 +366,9 @@ function getConteoAcumulado(req, res) {
             }
 
             Pozo.find({
-                    'estado.estadoPozo': estadoPozo._id
-                })
-                .populate('etapa')
+                'estado.estadoPozo': estadoPozo._id
+            })
+
                 .exec(function (err, pozos) {
                     if (err) {
                         return res.status(400).json({
@@ -375,13 +381,16 @@ function getConteoAcumulado(req, res) {
                     let segunda = 0;
                     let tercera = 0;
 
+                    console.log(pozos.length)
                     for (const pozo of pozos) {
-                        if (pozo.etapa.nombre === 'Etapa 1') {
+                        if (pozo.etapa === 'Etapa 1') {
                             primera++;
-                        } else if (pozo.etapa.nombre === 'Etapa 2') {
+                        } else if (pozo.etapa === 'Etapa 2') {
                             segunda++;
-                        } else if (pozo.etapa.nombre === 'Etapa 3') {
+                        } else if (pozo.etapa === 'Etapa 3') {
                             tercera++;
+                        } else {
+                            console.log(pozo.etapa)
                         }
                     }
 
@@ -404,68 +413,49 @@ function getConteoAcumulado(req, res) {
 }
 
 function getConteoAcumuladoPorEtapa(req, res) {
-    Etapa.findOne({
-            'nombre': req.params.etapa
-        })
-        .exec((error, etapa) => {
-            if (error) {
+    Pozo.find({
+        'etapa': req.params.etapa
+    })
+        .populate('estado.estadoPozo')
+        .exec(function (err, pozos) {
+            if (err) {
                 return res.status(400).json({
                     title: 'Error',
-                    error: error
+                    error: err
                 });
             }
 
-            if (!etapa) {
-                return res.status(400).json({
-                    title: 'Error',
-                    error: 'No se encuentra la etapa'
-                });
+            let subido = 0;
+            let pendiente = 0;
+
+            for (const pozo of pozos) {
+                if (pozo.estado.estadoPozo.nombre === 'Pendiente') {
+                    pendiente++;
+                } else if (pozo.estado.estadoPozo.nombre === 'Subido') {
+                    subido++;
+                }
             }
 
-            Pozo.find({
-                    'etapa': etapa._id
-                })
-                .populate('estado.estadoPozo')
-                .exec(function (err, pozos) {
-                    if (err) {
-                        return res.status(400).json({
-                            title: 'Error',
-                            error: err
-                        });
-                    }
+            const total = subido + pendiente;
+            const porcentSubido = ((subido / total) * 100).toFixed(2);
+            const porcentPendiente = ((pendiente / total) * 100).toFixed(2);
 
-                    let subido = 0;
-                    let pendiente = 0;
+            var conteoAcumuladoPorEtapa = {
+                porcentaje: [porcentSubido, porcentPendiente],
+                conteo: [subido, pendiente]
+            }
 
-                    for (const pozo of pozos) {
-                        if (pozo.estado.estadoPozo.nombre === 'Pendiente') {
-                            pendiente++;
-                        } else if (pozo.estado.estadoPozo.nombre === 'Subido') {
-                            subido++;
-                        }
-                    }
-
-                    const total = subido + pendiente;
-                    const porcentSubido = ((subido / total) * 100).toFixed(2);
-                    const porcentPendiente = ((pendiente / total) * 100).toFixed(2);
-
-                    var conteoAcumuladoPorEtapa = {
-                        porcentaje: [porcentSubido, porcentPendiente],
-                        conteo: [subido, pendiente]
-                    }
-
-                    res.status(200).json({
-                        message: 'Success',
-                        obj: conteoAcumuladoPorEtapa
-                    });
-                });
+            res.status(200).json({
+                message: 'Success',
+                obj: conteoAcumuladoPorEtapa
+            });
         });
 }
 
 function getPozosRelevadorSemanal(req, res) {
     Relevador.findOne({
-            'nombre': req.params.nomRelev
-        })
+        'nombre': req.params.nomRelev
+    })
         .exec((error, relevador) => {
             let fechaMin;
             let fechaMax;
@@ -514,28 +504,28 @@ function getPozosRelevadorSemanal(req, res) {
             }
 
             Pozo.aggregate([{
-                        $match: {
-                            "$and": [{
-                                    relevador: relevador._id
-                                },
-                                {
-                                    fechaRelevo: {
-                                        "$gte": fechaMin,
-                                        "$lte": fechaMax,
-                                    }
-                                }
-                            ]
-                        }
+                $match: {
+                    "$and": [{
+                        relevador: relevador._id
                     },
                     {
-                        $group: {
-                            _id: "$fechaRelevo",
-                            count: {
-                                $sum: 1
-                            }
+                        fechaRelevo: {
+                            "$gte": fechaMin,
+                            "$lte": fechaMax,
                         }
                     }
-                ])
+                    ]
+                }
+            },
+            {
+                $group: {
+                    _id: "$fechaRelevo",
+                    count: {
+                        $sum: 1
+                    }
+                }
+            }
+            ])
                 .then(result => {
                     var resultado = [0, 0, 0, 0, 0, 0, 0]
 
@@ -586,8 +576,8 @@ function getMes(fecha) {
 
 function getConteoPorMesRelevador(req, res) {
     Relevador.findOne({
-            'nombre': req.params.nomRelev
-        })
+        'nombre': req.params.nomRelev
+    })
         .exec((error, relevador) => {
             if (error) {
                 return res.status(400).json({
@@ -604,16 +594,16 @@ function getConteoPorMesRelevador(req, res) {
             }
 
             Pozo.find({
-                    $and: [{
-                        'relevador': relevador._id
-                    }, {
-                        'etapa': {
-                            $exists: true
-                        }
-                    }]
-                })
+                $and: [{
+                    'relevador': relevador._id
+                }, {
+                    'etapa': {
+                        $exists: true
+                    }
+                }]
+            })
                 .populate('estado.estadoPozo')
-                .populate('etapa')
+
                 .exec((err, pozos) => {
                     if (err) {
                         return res.status(400).json({
@@ -648,20 +638,20 @@ function getConteoPorMesRelevador(req, res) {
                     var total3 = 0;
                     var mes = 0;
                     for (const pozo of pozos) {
-                        if (pozo.etapa.nombre === 'Etapa 1') {
+                        if (pozo.etapa === 'Etapa 1') {
                             if (pozo.estado.estadoPozo.nombre === 'Subido' || pozo.estado.estadoPozo.nombre === 'Listo') {
                                 mes = getMes(pozo.fechaRelevo)
                                 conteo.mensual.etapa1[mes] = conteo.mensual.etapa1[mes] + 1;
                             }
                             total1++;
-                        } else if (pozo.etapa.nombre === 'Etapa 2') {
+                        } else if (pozo.etapa === 'Etapa 2') {
                             if (pozo.estado.estadoPozo.nombre === 'Subido' || pozo.estado.estadoPozo.nombre === 'Listo') {
                                 mes = getMes(pozo.fechaRelevo)
                                 conteo.mensual.etapa2[mes] = conteo.mensual.etapa2[mes] + 1;
                             }
                             total2++;
                         }
-                        if (pozo.etapa.nombre === 'Etapa 3') {
+                        if (pozo.etapa === 'Etapa 3') {
                             if (pozo.estado.estadoPozo.nombre === 'Subido' || pozo.estado.estadoPozo.nombre === 'Listo') {
                                 mes = getMes(pozo.fechaRelevo)
                                 conteo.mensual.etapa3[mes] = conteo.mensual.etapa3[mes] + 1;
@@ -736,12 +726,12 @@ function getConteoPorMesRelevador(req, res) {
 
 function getConteoPorMesGeneral(req, res) {
     Pozo.find({
-            'etapa': {
-                $ne: "5db2966cc4b475111ae0440a"
-            }
-        })
+        'etapa': {
+            $ne: "5db2966cc4b475111ae0440a"
+        }
+    })
         .populate('estado.estadoPozo')
-        .populate('etapa')
+
         .exec((err, pozos) => {
             if (err) {
                 return res.status(400).json({
@@ -776,20 +766,20 @@ function getConteoPorMesGeneral(req, res) {
             var total3 = 0;
             var mes = 0;
             for (const pozo of pozos) {
-                if (pozo.etapa.nombre === 'Etapa 1') {
+                if (pozo.etapa === 'Etapa 1') {
                     if (pozo.estado.estadoPozo.nombre === 'Subido' || pozo.estado.estadoPozo.nombre === 'Listo') {
                         mes = getMes(pozo.fechaRelevo)
                         conteo.mensual.etapa1[mes] = conteo.mensual.etapa1[mes] + 1;
                     }
                     total1++;
-                } else if (pozo.etapa.nombre === 'Etapa 2') {
+                } else if (pozo.etapa === 'Etapa 2') {
                     if (pozo.estado.estadoPozo.nombre === 'Subido' || pozo.estado.estadoPozo.nombre === 'Listo') {
                         mes = getMes(pozo.fechaRelevo)
                         conteo.mensual.etapa2[mes] = conteo.mensual.etapa2[mes] + 1;
                     }
                     total2++;
                 }
-                if (pozo.etapa.nombre === 'Etapa 3') {
+                if (pozo.etapa === 'Etapa 3') {
                     if (pozo.estado.estadoPozo.nombre === 'Subido' || pozo.estado.estadoPozo.nombre === 'Listo') {
                         mes = getMes(pozo.fechaRelevo)
                         conteo.mensual.etapa3[mes] = conteo.mensual.etapa3[mes] + 1;
@@ -876,8 +866,8 @@ function cargarPozo(req, res) {
     }
 
     EstadoPozo.findOne({
-            'nombre': req.body.estado
-        })
+        'nombre': req.body.estado
+    })
         .exec((error, estadoPozo) => {
             if (error) {
                 return res.status(400).json({
@@ -944,8 +934,8 @@ function cargarPozo(req, res) {
 
 function editarPozo(req, res) {
     EstadoPozo.findOne({
-            'nombre': req.body.estado
-        })
+        'nombre': req.body.estado
+    })
         .exec((error, estado) => {
             if (error) {
                 return res.status(400).json({
@@ -977,7 +967,7 @@ function editarPozo(req, res) {
                 }
 
                 if (!pozo.fechaRelevo) {
-                    pozo.fechaRelevo = new Date(2019, 9, 31);
+                    pozo.fechaRelevo = new Date(2019, 10, 1);
                 }
 
                 if (estado) {
@@ -985,7 +975,7 @@ function editarPozo(req, res) {
                 }
 
                 if (req.body.fecha) {
-                    pozo.estado.fecha = new Date(2019, 9, 31);
+                    pozo.estado.fecha = new Date(2019, 10, 1);
                 }
 
                 if (req.body.idRelevador) {
@@ -1015,8 +1005,8 @@ function editarPozo(req, res) {
 
 function eliminarPozo(req, res) {
     Pozo.findOne({
-            '_id': req.params.idPozo
-        })
+        '_id': req.params.idPozo
+    })
         .exec(function (err, pozo) {
             if (pozo) {
                 pozo.remove().then(function (pozoEliminado) {

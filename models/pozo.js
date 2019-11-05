@@ -24,43 +24,22 @@ var PozoSchema = Schema({
     },
     fechaRelevo: Date,
     coordenadas: Coordenadas,
-    etapa: {
-        type: Schema.Types.ObjectId,
-        ref: 'Etapa'
-    },
+    etapa: String,
     estado: Estado,
     relevador: {
         type: Schema.Types.ObjectId,
         ref: 'Relevador'
     },
-    areaConcesion: {
-        type: Schema.Types.ObjectId,
-        ref: 'Area_Concesion'
-    },
-    areaReserva: {
-        type: Schema.Types.ObjectId,
-        ref: 'Area_Reserva'
-    },
-    activo: {
-        type: Schema.Types.ObjectId,
-        ref: 'Activo'
-    },
-    yacimiento: {
-        type: Schema.Types.ObjectId,
-        ref: 'Yacimiento'
-    },
-    region: {
-        type: Schema.Types.ObjectId,
-        ref: 'Region'
-    },
-    zona: {
-        type: Schema.Types.ObjectId,
-        ref: 'Zona'
-    },
-    provincia: {
-        type: Schema.Types.ObjectId,
-        ref: 'Provincia'
-    }
+    areaConcesion: String,
+    areaReserva: String,
+    activo: String,
+    yacimiento: String,
+    region: String,
+    zona: String,
+    provincia: String,
+    operacion: String,
+    tomaPresion: Boolean,
+    servidumbres: Boolean
 });
 var Pozo = mongoose.model('Pozo', PozoSchema);
 
