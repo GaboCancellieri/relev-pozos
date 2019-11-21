@@ -71,7 +71,7 @@ export class PozoComponent implements OnInit {
       .then(pozos => {
         this.pozos = pozos;
         this.auxPozos = pozos;
-        console.log(pozos)
+        console.log(pozos);
       });
   }
 
@@ -154,7 +154,7 @@ export class PozoComponent implements OnInit {
     }
 
     this.pozoService.editarPozo(this.selectedPozo._id, this.selectedPozo.nombre, this.selectedPozo.coordenadas,
-      estado, fecha, idRelevador, this.selectedPozo.etapa._id)
+      estado, fecha, idRelevador, this.selectedPozo.etapa)
       .then(pozoEditado => {
         // cierro el modal
         this.cerrarEditar.nativeElement.click();
@@ -196,7 +196,7 @@ export class PozoComponent implements OnInit {
     const fecha = new Date();
 
     this.pozoService.editarPozo(this.selectedPozo._id, this.selectedPozo.nombre, this.selectedPozo.coordenadas,
-      'Subido', fecha, this.selectedPozo.relevador._id, this.selectedPozo.etapa._id)
+      'Subido', fecha, this.selectedPozo.relevador._id, this.selectedPozo.etapa)
       .then(pozoEditado => {
         // cierro el modal
         this.cerrarEditar.nativeElement.click();
@@ -261,7 +261,7 @@ export class PozoComponent implements OnInit {
   filtrarEtapa(etapa: string) {
     this.pozos = this.pozos.filter(pozo => pozo.etapa);
     this.pozos = this.pozos.filter(pozo =>
-      pozo.etapa.nombre.toLowerCase().includes(etapa.toLowerCase()));
+      pozo.etapa.toLowerCase().includes(etapa.toLowerCase()));
   }
 
   filtrarRelevador(relevador: string) {

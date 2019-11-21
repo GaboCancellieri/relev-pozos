@@ -76,13 +76,13 @@
                                                 {{pozo[col.field]}}
                                             </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'zona'">
-                                                {{pozo[col.field].nombre}}
+                                                {{pozo[col.field]}}
                                             </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'yacimiento'">
-                                                {{pozo[col.field].nombre}}
+                                                {{pozo[col.field]}}
                                             </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'provincia'">
-                                                {{pozo[col.field].nombre}}
+                                                {{pozo[col.field]}}
                                             </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'coordenadas'">
                                                 {{pozo[col.field].latitud}}, {{pozo[col.field].longitud}}
@@ -96,13 +96,13 @@
                                             </div>
                                             <div *ngIf="pozo[col.field] && col.field === 'etapa'">
                                                 <div style="text-align: center">
-                                                    <button pButton *ngIf="pozo[col.field].nombre == 'Etapa 1'"
+                                                    <button pButton *ngIf="pozo[col.field] == 'Etapa 1'"
                                                         readonly='true' class="ui-button-danger ui-button-raised"
                                                         label="Etapa 1" icon="fas fa-bell"></button>
-                                                    <button pButton *ngIf="pozo[col.field].nombre == 'Etapa 2'"
+                                                    <button pButton *ngIf="pozo[col.field] == 'Etapa 2'"
                                                         readonly='true' class="ui-button-warning ui-button-raised"
                                                         label="Etapa 2" icon="fas fa-stopwatch"></button>
-                                                    <button pButton *ngIf="pozo[col.field].nombre == 'Etapa 3'"
+                                                    <button pButton *ngIf="pozo[col.field] == 'Etapa 3'"
                                                         readonly='true' class="ui-button-success ui-button-raised"
                                                         label="Etapa 3" icon="fas fa-flag-checkered"></button>
                                                 </div>

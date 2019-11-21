@@ -14,15 +14,15 @@ import { Zona } from './types/zona';
 export class Pozo {
     _id: string;
     nombre: string;
-    activo: Activo;
-    yacimiento: Yacimiento;
-    areaConcesion: AreaConcesion;
-    areaReserva: AreaReserva;
-    region: Region;
-    zona: Zona;
-    provincia: Provincia;
+    activo: string;
+    yacimiento: string;
+    areaConcesion: string;
+    areaReserva: string;
+    region: string;
+    zona: string;
+    provincia: string;
     coordenadas: Coordenadas;
-    etapa: Etapa;
+    etapa: string;
     estado: Estado;
     relevador: Relevador;
 }

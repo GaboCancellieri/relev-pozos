@@ -1,0 +1,209 @@
+{
+    "_id": "5dc0ec235ceb1f3348bec205",
+    "areaConcesion": "AL NORTE DE LA DORSAL",
+    "areaReserva": "Al Norte de la Dorsal",
+    "yacimiento": "BAJO BARDA GONZALEZ",
+    "nombre": "Cha.Nq.BBG.e-3",
+    "region": "CENTRO",
+    "activo": "El Dorsal",
+    "provincia": "NEUQUEN",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec206",
+        "longitud": "-69.09310271999993",
+        "latitud": "-38.82697557999995"
+    },
+    "etapa": "Etapa 1",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec207",
+    "areaConcesion": "AL NORTE DE LA DORSAL",
+    "areaReserva": "Al Norte de la Dorsal",
+    "yacimiento": "BAJO BARDA GONZALEZ",
+    "nombre": "Cha.Nq.BBG.x-1",
+    "region": "CENTRO",
+    "activo": "El Dorsal",
+    "provincia": "NEUQUEN",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec208",
+        "longitud": "-69.08953391999995",
+        "latitud": "-38.829691579999974"
+    },
+    "etapa": "Etapa 1",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec209",
+    "areaConcesion": "AL SUR DE LA DORSAL",
+    "areaReserva": "Al Sur de la Dorsal",
+    "yacimiento": "CERRO LOTENA",
+    "nombre": "NCL-10",
+    "region": "CENTRO",
+    "activo": "El Dorsal",
+    "provincia": "NEUQUEN",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec20a",
+        "longitud": "-69.60523864999993",
+        "latitud": "-39.24378396999998"
+    },
+    "etapa": "Etapa 2",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec20b",
+    "areaConcesion": "AL SUR DE LA DORSAL",
+    "areaReserva": "Al Sur de la Dorsal",
+    "yacimiento": "CERRO LOTENA",
+    "nombre": "NCL-17",
+    "region": "CENTRO",
+    "activo": "El Dorsal",
+    "provincia": "NEUQUEN",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec20c",
+        "longitud": "-69.59149468999993",
+        "latitud": "-39.23757877999998"
+    },
+    "etapa": "Etapa 2",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec20d",
+    "areaConcesion": "AL SUR DE LA DORSAL",
+    "areaReserva": "Al Sur de la Dorsal",
+    "yacimiento": "CERRO LOTENA",
+    "nombre": "NCL-21",
+    "region": "CENTRO",
+    "activo": "El Dorsal",
+    "provincia": "NEUQUEN",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec20e",
+        "longitud": "-69.61435220999994",
+        "latitud": "-39.24371868999998"
+    },
+    "etapa": "Etapa 2",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec20f",
+    "areaConcesion": "AL SUR DE LA DORSAL",
+    "areaReserva": "Al Sur de la Dorsal",
+    "yacimiento": "CERRO LOTENA",
+    "nombre": "NCL-5",
+    "region": "CENTRO",
+    "activo": "El Dorsal",
+    "provincia": "NEUQUEN",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec210",
+        "longitud": "-69.57920476999993",
+        "latitud": "-39.24893581999993"
+    },
+    "etapa": "Etapa 2",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec211",
+    "areaConcesion": "AL SUR DE LA DORSAL",
+    "areaReserva": "Al Sur de la Dorsal",
+    "yacimiento": "CERRO LOTENA",
+    "nombre": "NCL-7",
+    "region": "CENTRO",
+    "activo": "El Dorsal",
+    "provincia": "NEUQUEN",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec212",
+        "longitud": "-69.60059844999995",
+        "latitud": "-39.24388418999996"
+    },
+    "etapa": "Etapa 2",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec213",
+    "areaConcesion": "PICO TRUNCADO - EL CORDON",
+    "areaReserva": "Pico Truncado",
+    "yacimiento": "PICO TRUNCADO",
+    "nombre": "YPF.SC.PT-536",
+    "region": "SUR",
+    "activo": "Seco Leon - Pico Truncado",
+    "provincia": "SANTA CRUZ",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec214",
+        "longitud": "-68.07953360999994",
+        "latitud": "-46.75158842999997"
+    },
+    "etapa": "Etapa 1",
+    "zona": "CENTRO_3"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec215",
+    "areaConcesion": "",
+    "areaReserva": "",
+    "yacimiento": "",
+    "nombre": "TBS_X1",
+    "region": "",
+    "activo": "",
+    "provincia": "",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec216",
+        "longitud": "null",
+        "latitud": "null"
+    },
+    "etapa": "Sin Asignar",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec217",
+    "areaConcesion": "",
+    "areaReserva": "",
+    "yacimiento": "",
+    "nombre": "UXP_105",
+    "region": "",
+    "activo": "",
+    "provincia": "",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec218",
+        "longitud": "null",
+        "latitud": "null"
+    },
+    "etapa": "Sin Asignar",
+    "zona": "NORTE"
+}  {
+    "_id": "5dc0ec235ceb1f3348bec219",
+    "areaConcesion": "",
+    "areaReserva": "",
+    "yacimiento": "",
+    "nombre": "YPF.Ch.-1863",
+    "region": "",
+    "activo": "",
+    "provincia": "",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec21a",
+        "longitud": "null",
+        "latitud": "null"
+    },
+    "etapa": "Sin Asignar",
+    "zona": ""
+}  {
+    "_id": "5dc0ec235ceb1f3348bec21b",
+    "areaConcesion": "",
+    "areaReserva": "",
+    "yacimiento": "",
+    "nombre": "YPF.Ch.D-69",
+    "region": "",
+    "activo": "",
+    "provincia": "",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec21c",
+        "longitud": "null",
+        "latitud": "null"
+    },
+    "etapa": "Sin Asignar",
+    "zona": ""
+}  {
+    "_id": "5dc0ec235ceb1f3348bec21d",
+    "areaConcesion": "",
+    "areaReserva": "",
+    "yacimiento": "",
+    "nombre": "YPF.Ch.D-80",
+    "region": "",
+    "activo": "",
+    "provincia": "",
+    "coordenadas": {
+        "_id": "5dc0ec235ceb1f3348bec21e",
+        "longitud": "null",
+        "latitud": "null"
+    },
+    "etapa": "Sin Asignar",
+    "zona": ""
+}

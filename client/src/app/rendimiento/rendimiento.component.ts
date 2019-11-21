@@ -113,8 +113,9 @@ export class RendimientoComponent implements OnInit {
     getGeneralMensual() {
         this.pozoService.getGeneralMensual()
             .then(conteoSemanal => {
+                    console.log(conteoSemanal)
                     this.dataMensual = {
-                        labels: ['Agosto', 'Septiembre', 'Octubre'],
+                        labels: ['Agosto', 'Septiembre', 'Octubre', 'Noviembre'],
                         datasets: [
                             {
                                 label: 'Pendientes (Etapa 1)',
