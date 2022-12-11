@@ -18,7 +18,7 @@
     "cors": "^2.8.5",
     "cron": "^1.7.1",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "jsreport": "^2.2.0",
     "jsreport-core": "^2.2.0",
     "jsreport-express": "^2.2.2",
